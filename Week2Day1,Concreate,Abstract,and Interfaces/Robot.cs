@@ -8,9 +8,11 @@ namespace Week2Day1_Concreate_Abstract_and_Interfaces
 {
     public class Robot
     {
-        public bool IsAsleep = false;
+        public bool IsShutdown = true;
         private bool Tm103 { get; set; }
         public string Name { get; set; }
+
+      
 
         public string DisplayName()
         {
@@ -25,6 +27,7 @@ namespace Week2Day1_Concreate_Abstract_and_Interfaces
         public string StartUp()
 
         {
+            IsShutdown = false;
             return "Start";
         }
         public string Shutdown()
@@ -37,11 +40,11 @@ namespace Week2Day1_Concreate_Abstract_and_Interfaces
             return true;
         }
 
-        public void IsAsleep();
+        public bool IsAsleep()
         {
-            if(asleep)
+            return IsShutdown; 
+
         }
-        Console.WriteLine("Robot Shutdown");
 
     }    
      }
