@@ -8,7 +8,7 @@ namespace Week2Day1_Concreate_Abstract_and_Interfaces
 {
    public class Human
     {
-        public bool IsAsleep = true;
+        public bool Asleep = true;
 
         public string Name { get; set; }
 
@@ -27,14 +27,22 @@ namespace Week2Day1_Concreate_Abstract_and_Interfaces
             Console.WriteLine($"Yum I ate {Food}");
         }
 
-        public string GoToSleep()
+        public void GoToSleep()
         {
-            ????
+            Console.WriteLine("Go to sleep!!");
         }
-        public string WakeUp()
+        public void WakeUp()
         {
-            ???
+            Console.WriteLine("Wake up!!");
         }
+        public void IsAsleep()
+        {
+            if(Asleep)
+            Console.WriteLine("Human is asleep!");
+
+        }
+       
+        
 
     }
 

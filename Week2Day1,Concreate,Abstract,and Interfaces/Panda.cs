@@ -8,6 +8,7 @@ namespace Week2Day1_Concreate_Abstract_and_Interfaces
 {
     public class Panda
     {
+        public bool ASleep = true;
 
         public string Name { get; set; }
 
@@ -33,6 +34,10 @@ namespace Week2Day1_Concreate_Abstract_and_Interfaces
         {
             Console.WriteLine("Wake up!!!");
         }
-
-
+        public void IsAsleep()
+        {
+            if (ASleep)
+                Console.WriteLine("Panda is alseep!");
+        }
+       
     }
