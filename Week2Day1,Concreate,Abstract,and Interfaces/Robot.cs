@@ -16,7 +16,7 @@ namespace Week2Day1_Concreate_Abstract_and_Interfaces
 
         public string DisplayName()
         {
-            return this.
+            return this.Name;
         }
 
         public string DisplayGreeting()
